@@ -1,0 +1,7 @@
+docker pull ubuntu:latest
+docker run -it -v `pwd`/log:/log --name="minergate-cli" ubuntu:latest /bin/bash
+
+apt-get update
+dpkg -i minergate-cli-release.deb 
+lscpu
+nproc

@@ -1,0 +1,28 @@
+ [
+     {
+         "code": "CRIX.UPBIT.KRW-ETH",
+         "candleDateTime": "2017-12-27T05:00:00+00:00",
+         "candleDateTimeKst": "2017-12-27T14:00:00+09:00",
+         "openingPrice": 1044500.0,
+         "highPrice": 1046000.0,
+         "lowPrice": 1041500.0,
+         "tradePrice": 1042000.0,
+         "candleAccTradeVolume": 684.11725164,
+         "candleAccTradePrice": 714053756.923975,
+         "timestamp": 1514351394497,
+         "unit": 10
+     },
+     {
+         "code": "CRIX.UPBIT.KRW-ETH",
+         "candleDateTime": "2017-12-27T04:50:00+00:00",
+         "candleDateTimeKst": "2017-12-27T13:50:00+09:00",
+         "openingPrice": 1045000.0,
+         "highPrice": 1046500.0,
+         "lowPrice": 1044000.0,
+         "tradePrice": 1045500.0,
+         "candleAccTradeVolume": 522.21806935,
+         "candleAccTradePrice": 545843325.052035,
+         "timestamp": 1514350790989,
+         "unit": 10
+     }
+ ]

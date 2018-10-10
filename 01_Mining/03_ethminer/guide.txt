@@ -1,0 +1,2 @@
+docker build -t ethminer:latest -f Dockerfile .
+nvidia-docker run -it -v `pwd`/log:log --name="ethminer" ethminer:latest

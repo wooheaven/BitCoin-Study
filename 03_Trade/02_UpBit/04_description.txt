@@ -1,0 +1,11 @@
+ code                 종목 코드
+ candleDateTime       해당 캔들 생성 시각
+ candleDateTimeKst    해당 캔들 생성 시각 (한국시각 기준, KST = UTC +09:00:00)
+ openingPrice         해당 캔들 시가
+ highPrice            해당 캔들 고가
+ lowPrice             해당 캔들 저가
+ tradePrice           해당 캔들 종가
+ candleAccTradeVolume 해당 캔들 거래량
+ candleAccTradePrice  해당 캔들 거래대금
+ timestamp            UNIX 기분의 타임 스템프
+ unit                 조회 기준
