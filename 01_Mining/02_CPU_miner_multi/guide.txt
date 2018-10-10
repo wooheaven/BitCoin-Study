@@ -1,0 +1,2 @@
+docker build -t cpuminer-multi:latest -f Dockerfile .
+docker run -it -v `pwd`/log/:/cpuminer-multi/log/ --name="cpuminer-multi" cpuminer-multi:latest
