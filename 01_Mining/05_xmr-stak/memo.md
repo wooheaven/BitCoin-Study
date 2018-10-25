@@ -5,10 +5,6 @@ ubuntu 16.04 + cuda9 + nvidia-docker2
 
 # log
 ```
-docker build -t fireice-uk/xmr-stak:latest -f Dockerfile .
-
-docker images
-
 nvidia-docker run -itd --restart unless-stopped \
 -v `pwd`/log:/log \
 -p 180:80 \

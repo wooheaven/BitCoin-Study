@@ -1,0 +1,1 @@
+echo "" > xmr-stak.log
