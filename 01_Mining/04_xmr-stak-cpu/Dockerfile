@@ -7,7 +7,7 @@ ENV XMRSTAK_CMAKE_FLAGS -DXMR-STAK_COMPILE=generic -DCUDA_ENABLE=OFF -DOpenCL_EN
 # Install packages and Compile XMR_STAK
 RUN apt-get update \
     && set -x \
-    && apt-get install -qq --no-install-recommends -y build-essential ca-certificates cmake cuda-core-9-0 git cuda-cudart-dev-9-0 libhwloc-dev libmicrohttpd-dev libssl-dev \
+    && apt-get install -qq --no-install-recommends -y build-essential ca-certificates cmake git libhwloc-dev libmicrohttpd-dev libssl-dev \
     && git clone $GIT_REPOSITORY \
     && cd /xmr-stak \
     && git checkout tags/${XMR_STAK_VERSION} -b build \
@@ -18,7 +18,7 @@ RUN apt-get update \
     && cd - \
     && mv /xmr-stak/bin/* /usr/local/bin/ \
     && rm -rf /xmr-stak \
-    && apt-get purge -y -qq build-essential cmake cuda-core-9-0 git cuda-cudart-dev-9-0 libhwloc-dev libmicrohttpd-dev libssl-dev \
+    && apt-get purge -y -qq build-essential cmake git libhwloc-dev libmicrohttpd-dev libssl-dev \
     && apt-get clean -qq
 
 # TimeZone
