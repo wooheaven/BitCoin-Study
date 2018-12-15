@@ -1,1 +1,1 @@
-docker build --tag test/test:2.5.2 --force-rm --file Dockerfile .
+docker build --tag test/test:2.7.0 --force-rm --file Dockerfile .
