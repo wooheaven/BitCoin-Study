@@ -1,7 +1,7 @@
 FROM nvidia/cuda:9.0-base
  
 ENV GIT_REPOSITORY https://github.com/fireice-uk/xmr-stak.git
-ENV XMR_STAK_VERSION 2.5.2
+ENV XMR_STAK_VERSION 2.7.0
 ENV XMRSTAK_CMAKE_FLAGS -DXMR-STAK_COMPILE=generic -DCUDA_ENABLE=ON -DOpenCL_ENABLE=OFF
 
 # Install packages and Compile XMR_STAK
