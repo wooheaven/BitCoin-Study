@@ -68,7 +68,7 @@ Please enter:
 	- stellite
 	- turtlecoin
 
-cryptonight_v8
+monero
 - Pool address: e.g. pool.example.com:3333
 asia.cryptonight-hub.miningpoolhub.com:20580
 - Username (wallet address or pool login):
@@ -151,5 +151,4 @@ root@057788a367e7:/mnt# vi cpu.txt
     { "low_power_mode" : false, "no_prefetch" : true, "asm" : "auto", "affine_to_cpu" : 2 },
     { "low_power_mode" : false, "no_prefetch" : true, "asm" : "auto", "affine_to_cpu" : 3 },
 ],
-
 ```
