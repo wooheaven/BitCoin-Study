@@ -1,7 +1,7 @@
 FROM nvidia/cuda:9.0-base
  
 ENV GIT_REPOSITORY https://github.com/fireice-uk/xmr-stak.git
-ENV XMR_STAK_VERSION 2.7.0
+ENV XMR_STAK_VERSION 2.10.4
 ENV XMRSTAK_CMAKE_FLAGS -DXMR-STAK_COMPILE=generic -DCUDA_ENABLE=ON -DOpenCL_ENABLE=OFF
 
 # Install packages and Compile XMR_STAK
@@ -18,7 +18,7 @@ RUN apt-get update \
     && cd - \
     && mv /xmr-stak/bin/* /usr/local/bin/ \
     && rm -rf /xmr-stak \
-    && apt-get purge -y -qq build-essential cmake cuda-core-9-0 git cuda-cudart-dev-9-0 libhwloc-dev libmicrohttpd-dev libssl-dev \
+    && apt-get purge -y -qq build-essential ca-certificates cmake cuda-core-9-0 git cuda-cudart-dev-9-0 libhwloc-dev libmicrohttpd-dev libssl-dev \
     && apt-get clean -qq
 
 # TimeZone
@@ -29,4 +29,3 @@ VOLUME /mnt
 WORKDIR /mnt
 
 ENTRYPOINT ["/bin/bash"]
-#ENTRYPOINT ["/usr/local/bin/xmr-stak"]
